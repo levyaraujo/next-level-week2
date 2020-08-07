@@ -3,6 +3,14 @@
     height: 100vh;
 }
 
+#page-give-classes #container .page-header {
+    background-color: var(--color-secondary-dark);
+}
+
+#page-give-classes #container .page-header .header-content p {
+    color: #FFF;
+}
+
 #page-give-classes .page-header .header-content {
     margin-bottom: 6.4rem;
 }
