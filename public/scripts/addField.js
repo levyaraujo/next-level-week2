@@ -1,7 +1,7 @@
 // Selecionar o botão
-document.querySelector("#add-time")
+const addTime = document.querySelector("#add-time")
 // Quando clicar no botão
-.addEventListener("click", cloneField)
+
 
 function cloneField () {
     const newFieldContainer = document.querySelector(".schedule-item")
@@ -16,3 +16,5 @@ function cloneField () {
     document.querySelector("#schedule-items")
     .appendChild(newFieldContainer)
 }
+
+addTime.addEventListener("click", cloneField)

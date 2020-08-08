@@ -106,9 +106,14 @@
     :root {
         font-size: 40%;
     }
+
+    .hero-image {
+        height: 45rem;
+    }
 }
 
-@media (min-width: 934px) {
+
+@media (min-width: 700px) {
     #page-landing #container {
         display: grid;
         max-width: 1100px;
