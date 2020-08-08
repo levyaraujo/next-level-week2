@@ -81,6 +81,8 @@
 
 .buttons-container a.study:hover {
     background: var(--color-primary-light);
+    box-shadow: 2px 2px 5px #282828;
+    transition: 0.5s;
 }
 
 .buttons-container a.give-classes {
@@ -89,6 +91,8 @@
 
 .buttons-container a.give-classes:hover {
     background: var(--color-secondary-dark);
+    box-shadow: 2px 2px 5px #282828;
+    transition: 0.5s;
 }
 
 .total-connections {
