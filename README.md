@@ -1,6 +1,14 @@
-# Next Level Week - Semana 2
+# Next Level Week - Proffy
 
-Este repositório apresenta o projeto **Proffy** desenvolvido durante o evento [Next Level Week](https://nextlevelweek.com/inscricao/2) da [Rocketseat](https://rocketseat.com.br/)
+Platforma desenvolvida para conectar alunos e estudantes em meio à pandemia e como homenagem ao dia dos Profissionais da Educação do Brasil. O projeto Proffy foi desenvolvido durante a trilha Discovery da [Next Level Week](https://nextlevelweek.com/inscricao/2) da [Rocketseat](https://rocketseat.com.br/)
+
+
+## Tecnologias usadas 
+- HTML
+- CSS
+- JavaScript (Node.js)
+- SQlite
+- Express
 
 ## Aprendizados 🚀
 
