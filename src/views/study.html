@@ -19,16 +19,18 @@
 </head>
 
 <body id="page-study">
-
     <div id="container">
-        <header class="page-header">
 
+        <div class="top-container">
             <div class="top-bar-container">
-                <a href="/">
-                    <img src="images/icons/back.svg" alt="Voltar">
-                </a>
-                <img src="images/logo.svg" alt="Proffy">
+              <a href="/">
+                <img class="back" src="images/icons/back.svg" alt="Voltar" />
+              </a>
+              <img src="images/logo.svg" alt="Proffy" />
             </div>
+          </div>
+
+        <header class="page-header">
             <div class="header-content">
                 <strong>Esses são os proffys disponíveis</strong>
                 <form id="search-teachers">
@@ -59,7 +61,7 @@
                     </div>
                     <div class="input-block">
                         <label for="time">Hora</label>
-                        <input name="time" id="time" type="time" class="square-form" value="{{filters.time}}" >
+                        <input name="time" id="time" type="time" class="square-form" value="{{filters.time}}">
                     </div>
 
                     <button type="submit" class="square-form">Filtrar</button>
@@ -72,35 +74,35 @@
         <main>
 
             {% if proffys == "" %}
-                <p class="no-results">
-                    Nenhum professor encontrado com a sua pesquisa
-                </p>
+            <p class="no-results">
+                Nenhum professor encontrado com a sua pesquisa
+            </p>
 
             {% else %}
 
-                {% for proffy in proffys %}
-                <article class="teacher-item">
-                    <header>
-                        <img src="{{ proffy.avatar }}" alt="{{ proffy.name }}">
+            {% for proffy in proffys %}
+            <article class="teacher-item">
+                <header>
+                    <img src="{{ proffy.avatar }}" alt="{{ proffy.name }}">
 
-                        <div>
-                            <strong>{{ proffy.name }}</strong>
-                            <span>{{ proffy.subject }}</span>
-                        </div>
-                    </header>
-                    <p>{{ proffy.bio }}</p>
-                    <footer>
-                        <p>Preço/hora <strong>R${{ proffy.cost }}</strong></p>
-                        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&text=Olá {{proffy.name}}, tenho interesse na sua aula de {{proffy.subject}}"
-                            class="button">
+                    <div>
+                        <strong>{{ proffy.name }}</strong>
+                        <span>{{ proffy.subject }}</span>
+                    </div>
+                </header>
+                <p>{{ proffy.bio }}</p>
+                <footer>
+                    <p>Preço/hora <strong>R${{ proffy.cost }}</strong></p>
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&text=Olá {{proffy.name}}, tenho interesse na sua aula de {{proffy.subject}}"
+                        class="button">
 
-                            <img src="/images/icons/whatsapp.svg" alt="WhatsApp" class="whats">
-                            Entrar em contato
+                        <img src="/images/icons/whatsapp.svg" alt="WhatsApp" class="whats">
+                        Entrar em contato
 
-                        </a>
-                    </footer>
-                </article>
-                {%endfor%}
+                    </a>
+                </footer>
+            </article>
+            {%endfor%}
 
             {% endif %}
 
