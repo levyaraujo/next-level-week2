@@ -49,6 +49,7 @@
     line-height: 4.2rem;
     color: var(--color-title-in-primary);
     position: relative;
+    text-shadow: 1px 1px 3px #282828;
 }
 
 .page-header .header-content p {
